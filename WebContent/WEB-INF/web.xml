@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>nluser</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+    <servlet>
+        <servlet-name>nluser</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+       <servlet-name>nluser</servlet-name>
+       
+       <url-pattern>/loginform.jsp</url-pattern>
+       <url-pattern>/loginform.html</url-pattern>
+       
+       <url-pattern>/loginformaction.jsp</url-pattern>
+       <url-pattern>/loginformaction.html</url-pattern>
+       
+       <url-pattern>/userdata.jsp</url-pattern>
+       <url-pattern>/userdata.html</url-pattern>
+       
+       <url-pattern>/registrationform.jsp</url-pattern>
+       <url-pattern>/registrationform.html</url-pattern>
+       
+       
+        <url-pattern>/registrationformaction.jsp</url-pattern>
+       <url-pattern>/registrationformaction.html</url-pattern>
+       
+       
+        <url-pattern>/registered.jsp</url-pattern>
+        <url-pattern>/registered.html</url-pattern>
+      
+               <url-pattern>/userprofile.jsp</url-pattern>
+        <url-pattern>/userprofile.html</url-pattern>
+        
+
+    </servlet-mapping>
+  
+</web-app>

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.nlink.model.Member" table="Member" catalog="phangisa">
+		
+		<id name="member_id" type="java.lang.Long">
+			<column name="member_id" />
+			<generator class="identity" />
+		</id>
+
+		<property name="member_name" type="string">
+			<column name="member_name" length="200" />
+		</property>
+
+		<property name="member_surname" type="string">
+			<column name="member_surname" length="200"  />
+		</property>
+
+		<property name="member_dob" type="string">
+			<column name="member_dob" length="200" not-null="false" />
+		</property>
+
+		<property name="member_gender" type="java.lang.Integer">
+			<column name="member_gender" not-null="false" />
+		</property>
+
+		<property name="country_id" type="java.lang.Integer">
+			<column name="country_id" not-null="false" />
+		</property>
+
+		<property name="member_province_id" type="java.lang.Integer">
+			<column name="member_province_id" not-null="false"  />
+		</property>
+
+		<property name="member_location" type="string">
+			<column name="member_location" length="200" not-null="false" />
+		</property>
+
+		<property name="member_contact_no" type="string">
+			<column name="member_contact_no" length="200"  not-null="false" />
+		</property>
+
+		<property name="member_email" type="string">
+			<column name="member_email" length="200" not-null="true"
+				unique="true" />
+		</property>
+
+		<property name="member_password" type="string">
+			<column name="member_password" length="200" not-null="true"
+				unique="true" />
+		</property>
+
+		<property name="member_date_added" type="java.util.Date">
+			<column name="member_date_added" not-null="false"  />
+		</property>
+
+		<property name="activation_code" type="string">
+			<column name="activation_code" not-null="false" />
+		</property>
+
+		<property name="profile_pic_url" type="string">
+			<column name="profile_pic_url" length="200" 
+				not-null="false" />
+		</property>
+
+		<property name="usercategory_id" type="java.lang.Integer">
+			<column name="usercategory_id" not-null="false" />
+		</property>
+		
+		<property name="authstring" type="string">
+			<column name="authstring" length="200" not-null="false"  />
+		</property>
+		
+	</class>
+</hibernate-mapping>
