@@ -1,0 +1,7 @@
+com\nlink\model\Member.class
+com\nlink\controller\RegistrationController.class
+com\nlink\controller\ProfileController.class
+com\nlink\controller\LoginController.class
+com\nlink\dao\MemberDAO.class
+com\nlink\model\HibernateUtil.class
+com\nlink\dao\MemberDAOImpl.class

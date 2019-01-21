@@ -39,6 +39,15 @@
                <url-pattern>/userprofile.jsp</url-pattern>
         <url-pattern>/userprofile.html</url-pattern>
         
+        
+               <url-pattern>/updateprofile.jsp</url-pattern>
+        <url-pattern>/updateprofile.html</url-pattern>
+        
+        
+            <url-pattern>/logout.jsp</url-pattern>
+        <url-pattern>/logout.html</url-pattern>
+        
+        
 
     </servlet-mapping>
   
