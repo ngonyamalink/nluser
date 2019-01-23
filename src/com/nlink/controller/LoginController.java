@@ -154,7 +154,6 @@ public class LoginController {
 
 	public void LogOut(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		
-
 		MemberDAOImpl memberDAOImpl = new MemberDAOImpl();
 
 		Member member = memberDAOImpl
